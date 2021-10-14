@@ -1,0 +1,221 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    font: 16px/28px arial, sans-serif;
+    background-image: url('../img/hexagon.png');
+}
+
+.container {
+    width: 1260px;
+    background-color: rgb(255, 229, 219);
+    margin: 80px auto;
+    position: relative;
+}
+
+.topbar {
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    background-color: rgb(44, 106, 177);
+    border-bottom: 5px solid rgb(233, 233, 233);
+    z-index: 9999;
+}
+
+.topbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    margin: 10px 50px;
+    display: inline-block;
+    font-size: 22px;
+}
+
+.header {
+    padding: 40px;
+}
+
+.header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.navbar {
+    background-color: rgb(80, 80, 80);
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgb(252, 167, 111);
+    color: rgb(224, 224, 224);
+}
+
+.gambar {
+    background-image: url('../img/laptop.jpg');
+    background-size: cover;
+    background-position: 100% 20%;
+    height: 360px;
+    width: 100%;
+    border-top: 10px solid rgb(255, 127, 77);
+    border-bottom: 10px solid rgb(159, 204, 255);
+}
+
+.content {
+    background-color: rgb(255, 255, 255);
+}
+
+.main {
+    padding: 30px;
+    width: 800px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.main .penulis {
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+.main a {
+    text-decoration: none;
+    color: rgb(253, 152, 57);
+    padding: 5px;
+}
+
+.main p {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.sidebar {
+    padding: 30px;
+    width: 400px;
+    box-sizing: border-box;
+    float: right;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sidebar .author {
+    width:80px;
+    float: left;
+    padding-right: 20px;
+}
+
+.sidebar p {
+    font: 14px arial;
+}
+
+
+.ribbon {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    background-image: url('../img/twitter.png');
+    background-size: cover;
+    text-indent: -9999px;
+    position: absolute;
+    top: -23px;
+    right: -28px;
+}
+
+
+/* twitter ribon
+.ribbon {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-image: url('../img/facebook.png');
+    background-size: cover;
+    text-indent: -9999px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+*/
+
+.footer {
+    background-color: rgb(51, 51, 51);
+    padding: 10px;
+    font-size: 14px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+}
+
+
+/* micro clearfix */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
