@@ -51,7 +51,7 @@ ul li a::after {
     transition: .2s;
 }
 
-ul li a:hover::after {
+ul li a:not(.signup-btn):hover::after {
     width: 100%;
 }
 
