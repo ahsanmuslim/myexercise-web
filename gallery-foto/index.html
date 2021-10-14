@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Foto LightBox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Web Programming</h1>
+
+    <div class="container">
+        <ul class="gallery">
+            <li>
+                <a href="#satu">
+                    <img src="img/satu.jpg" alt="satu">
+                    <span>Satu</span>
+                </a>
+            </li>
+            <div class="overlay" id="satu">
+                <a href="#" class="close">Close X</a>
+                <a href="#enam" class="prev"></a>
+                <img src="img/satu.jpg" alt="satu">
+                <a href="#dua" class="next"></a>
+            </div>
+            <li>
+                <a href="#dua">
+                    <img src="img/dua.jpg" alt="dua">
+                    <span>dua</span>
+                </a>
+            </li>
+            <div class="overlay" id="dua">
+                <a href="#" class="close">Close X</a>
+                <a href="#satu" class="prev"></a>
+                <img src="img/dua.jpg" alt="dua">
+                <a href="#tiga" class="next"></a>
+            </div>
+            <li>
+                <a href="#tiga">
+                    <img src="img/tiga.jpg" alt="tiga">
+                    <span>tiga</span>
+                </a>
+            </li>
+            <div class="overlay" id="tiga">
+                <a href="#" class="close">Close X</a>
+                <a href="#dua" class="prev"></a>
+                <img src="img/tiga.jpg" alt="tiga">
+                <a href="#empat" class="next"></a>
+            </div>
+            <li>
+                <a href="#empat">
+                    <img src="img/empat.jpg" alt="empat">
+                    <span>empat</span>
+                </a>
+            </li>
+            <div class="overlay" id="empat">
+                <a href="#" class="close">Close X</a>
+                <a href="#tiga" class="prev"></a>
+                <img src="img/empat.jpg" alt="empat">
+                <a href="#lima" class="next"></a>
+            </div>
+            <li>
+                <a href="#lima">
+                    <img src="img/lima.jpg" alt="lima">
+                    <span>lima</span>
+                </a>
+            </li>
+            <div class="overlay" id="lima">
+                <a href="#" class="close">Close X</a>
+                <a href="#empat" class="prev"></a>
+                <img src="img/lima.jpg" alt="lima">
+                <a href="#enam" class="next"></a>
+            </div>
+            <li>
+                <a href="#enam">
+                    <img src="img/enam.jpg" alt="enam">
+                    <span>enam</span>
+                </a>
+            </li>
+            <div class="overlay" id="enam">
+                <a href="#" class="close">Close X</a>
+                <a href="#lima" class="prev"></a>
+                <img src="img/enam.jpg" alt="enam">
+                <a href="#satu" class="next"></a>
+            </div>
+
+            <div class="clear"></div>
+        </ul>
+    </div>
+</body>
+</html>
