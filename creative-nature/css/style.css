@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    /* border: 1px solid red; */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position-y:  -50px;
+    background-position-x: 20px;
+}
+
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    transition: 0.5s;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    padding: 3px 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    color: rgb(29, 29, 29);
+    font-weight: 500;
+    transition: .5s;
+}
+
+header .logo {
+    height: 35px;
+}
+
+section {
+    width: 60%;
+    margin: 70px 80px;
+}
+
+
+section h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: rgb(23, 79, 97);
+}
+
+section h1 span {
+    color: white;
+    font-size: 45px;
+}
+
+section p {
+    font-weight: 450;
+    margin-top: 30px;
+}
+
+section button {
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background-color: rgb(35, 107, 131);
+    color: white;
+    border-radius: 30px;
+    margin-top: 40px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+    height: 40px;
+    width: 40px;
+    margin: 20px 20px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 35px;
+    transition: 0.5s;
+}
+
+footer a:hover {
+    transform: scale(1.3) translateY(-5px);
+}
+
+header nav  ul li a:hover {
+    background-color: rgb(255, 255, 255, 0.7);
+}
+
+section button:hover {
+    background-color: rgb(15, 62, 78);
+}
+
+header #check {
+    display: none;
+}
+
+header label {
+    position: absolute;
+    font-size: 35px;
+    color: rgb(31, 31, 31);
+    cursor: pointer;
+    bottom: 25px;
+    right: 40px;
+    display: none;
+    transition: 0.2s;
+}
+
+header label:hover {
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+
+    body {
+        background-position-x: -200px;
+    }
+
+    header label {
+        z-index: 99;
+        display: block;
+    }
+
+    header label .close-btn {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section h1 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
+    section h1 span {
+        font-size: 35px;
+    }
+
+    #check:checked ~ nav {
+        z-index: 9;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgb(175, 210, 219);
+        opacity: .9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #check:checked ~ nav ul li a {
+        display: block;
+        margin: 20px 0;
+        font-weight: 800;
+        font-size: 22px;
+    }
+
+
+    #check:checked ~ label .menu-btn {
+        display: none;
+    }
+
+    #check:checked ~ label .close-btn {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    body {
+        background-position-x: -300px;
+    }
+
+    section h1 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    section h1 span {
+        font-size: 30px;
+    }
+
+    
+    section p {
+        font-weight: 450;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+}
