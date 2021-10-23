@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/bg.jpeg');
+  background-size: 100vw 100vh;
+  background-position: left top;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo {
+  height: 35px;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+nav {
+  margin-right: 100px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav ul li a {
+  position: relative;
+  margin: 0 25px;
+  text-decoration: none;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(173, 172, 172);
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  height: 6px;
+  width: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: #00b1b4;
+  transition: .5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 80px);
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 14px;
+  color: white;
+  font-weight: 300;
+  margin-bottom: 40px;
+  text-align: center;
+  line-height: 22px;
+}
+
+button {
+  margin: 0 15px;
+  padding: 10px 40px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  color: white;
+  background: transparent;
+  border: 1px solid #00b1b4;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 2s;
+}
+
+button span {
+  background-color: #00b1b4;
+  display: block;
+  height: 100%;
+  width: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  transition: .5s;
+}
+
+button:hover {
+  border: none;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+
